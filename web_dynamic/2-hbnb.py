@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""script that starts a Flask web applicatione"""
+"""script that starts a Flask web application"""
 from flask import Flask, render_template, url_for
 from models import storage
 from uuid import uuid4
