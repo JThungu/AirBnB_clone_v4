@@ -1,4 +1,3 @@
-// input checkbox functions
 $(function () {
   let clicked = [];
   let temp = [];
