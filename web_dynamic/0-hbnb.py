@@ -36,5 +36,5 @@ def hbnb_filters(the_id=None):
                            cache_id=cache_id)
 
 if __name__ == "__main__":
-    """Flask App"""
+    """ Flask App """
     app.run(host=host, port=port)
