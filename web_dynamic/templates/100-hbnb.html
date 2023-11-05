@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>HBnB</title>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -20,13 +20,10 @@
         
       </div>
     </header>
-    <main>
-      <div class="container">
-
-	<section class="filters">
-
-	  <div class="locations">
-	    <h3>States</h3>
+    <div class="container">
+      <section class="filters">
+	<div class="locations">
+	  <h3>States</h3>
 	    <h4>&nbsp;</h4>
 	    <ul class="popover">
 	      {% for state in states|dictsort %}
@@ -38,28 +35,25 @@
 	      </UL>
 	      {% endfor %}
 	    </ul>
-	  </div>
-
-	  <div class="amenities">
-	    <h3>Amenities</h3>
+	</div>
+	<div class="amenities">
+	  <h3>Amenities</h3>
 	    <h4>&nbsp;</h4>
 	    <ul class="popover">
 	      {% for amenity in amens|sort(attribute='name') %}
 	      <LI><INPUT type="checkbox" data-id="{{ amenity.id }}" data-name="{{ amenity.name }}">{{ amenity.name }}</LI>
 	      {% endfor %}
 	    </ul>
-	  </div>
-
-	  <button>Search</button>
-	</section>
-
-	<section class="places">
-	  <h1>Places</h1>
-	</section>
-      </div>
-    </main>
+	</div>
+	<button type="button" onclick="searchPlaces()">Search</button>
+      </section>
+      <div class="placesh1"><h1>Places</h1></div>
+      <section class="places">
+	<!-- <h1>Places</h1> -->
+      </section>
+    </div>
     <footer>
-      Holberton School
+      <p>Best School</p>
     </footer>
   </body>
 </html>
